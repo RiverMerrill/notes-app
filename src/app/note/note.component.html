@@ -1,0 +1,8 @@
+<button class="pull-left btn btn-secondary" [routerLink]="'/home'">Back</button>
+<p class="pull-right">{{noteDetails.date | date}}</p>
+<div class="container">
+  <label for="title">Title</label>
+  <input name="title" class="note-title" [formControl]="noteTitle" type="text"/>
+  <textarea rows="15" [formControl]="noteBody"></textarea>
+  <button class="btn btn-primary" (click)="saveNote()">Save</button>
+</div>

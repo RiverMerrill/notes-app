@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+.list-container {
+  width: 100%;
+}
+
+.list-item {
+  cursor: pointer;
+  margin-bottom: 1%;
+  border: 1px solid lightgrey;
+  box-shadow: -2px 2px 5px lightgrey;
+  vertical-align: baseline;
+  transition: background-color .5s ease;
+
+  .date {
+    font-size: 20pt;
+    vertical-align: baseline;
+  }
+
+  p {
+    font-size: 30pt;
+  }
+}
+
+.list-item:hover {
+  background-color: lightgrey;
+}

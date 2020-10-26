@@ -1,0 +1,10 @@
+<button class="btn btn-primary pull-right" (click)="createNewNote()">Add</button>
+<div class="container">
+  <h1 class="text-center">Notes</h1>
+  <div class="list-container">
+    <div class="list-item row" *ngFor="let note of notes" (click)="goToNote(note._id)">
+      <span class="date col col-md-3">{{ note.date | date }}</span>
+      <p class="col col-md-9">{{ note.title }}</p>
+    </div>
+  </div>
+</div>
